@@ -1,0 +1,270 @@
+h1 {
+  font-size: 40px !important;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+form {
+  width: 90%;
+  background-color: white;
+  box-shadow: 10px 10px 10px darkgrey;
+  padding: 2em;
+}
+form h2 {
+  padding: 15px;
+  color: rgb(2, 2, 59);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-indent: 2.5%;
+}
+form input,
+form textarea {
+  display: block;
+  font-size: 16px;
+  margin: 15px 0px;
+  font-family: "alef";
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(3, 3, 85);
+  width: 100%;
+  color: rgb(3, 71, 94);
+  transition: background-color 0.5s, border-radius 0.5s;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: rgb(93, 158, 182);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form textarea {
+  height: 50px;
+  resize: none;
+  transition: height 0.7s ease-in-out;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background-color: rgb(217, 236, 243);
+  border-radius: 10px;
+}
+form textarea:focus {
+  height: 300px;
+}
+form textarea::-webkit-scrollbar {
+  width: 4px;
+}
+form textarea::-webkit-scrollbar-track {
+  background: #bde9fa;
+}
+form textarea::-webkit-scrollbar-thumb {
+  background-color: #0d0535;
+  border-radius: 50%;
+}
+form button {
+  width: 40%;
+  height: 50px;
+  background-color: white;
+  color: rgb(2, 2, 70);
+  border: 2.5px solid rgb(93, 158, 182);
+  border-radius: 15px;
+  margin: 40px calc(5% - 1px);
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  transition: background-color 0.3s linear;
+}
+form button:hover {
+  background-color: rgb(93, 158, 182);
+}
+form button:hover .fa-refresh {
+  transform: rotate(180deg);
+}
+form button:hover .fa-paper-plane-o {
+  transform: translate(15px, -15px) scale(0.1, 0.1);
+}
+form button:focus {
+  outline: none;
+}
+form i {
+  margin-right: 15px;
+  transition: transform 0.5s 0.3s;
+}
+.space {
+  height: 75px;
+}
+.contact_info {
+  width: 90%;
+  color: #052f3a;
+  text-align: center;
+  font-size: 20px;
+  font-family: arial;
+  box-sizing: border-box;
+  padding: 3%;
+  padding-top: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px darkgrey;
+}
+.contact_info h2 {
+  padding: 25px;
+  color: rgb(2, 2, 59);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.contact_info p {
+  padding: 5px 0px 20px 0px;
+}
+.contact_info .job {
+  font-weight: bold;
+}
+.contact_info i {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    padding-top: 150px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  form {
+    width: calc(55% - 40px);
+    padding: 3%;
+    padding-right: 5%;
+    background-color: white;
+    box-shadow: 10px 10px 10px darkgrey;
+    margin-right: 40px;
+  }
+  form h2 {
+    padding: 15px;
+    text-align: right;
+    color: rgb(2, 2, 59);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-indent: 2.5%;
+  }
+  form input,
+  form textarea {
+    display: block;
+    font-size: 20px;
+    margin: 15px 0px;
+    font-family: "alef";
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(3, 3, 85);
+    width: 60%;
+    color: rgb(3, 71, 94);
+    transition: background-color 0.5s, border-radius 0.5s;
+  }
+  form input::placeholder,
+  form textarea::placeholder {
+    color: rgb(93, 158, 182);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  form textarea {
+    width: 60%;
+    height: 50px;
+    resize: none;
+    transition: height 0.7s ease-in-out;
+  }
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    background-color: rgb(217, 236, 243);
+    border-radius: 10px;
+  }
+  form textarea:focus {
+    height: 300px;
+  }
+  form textarea::-webkit-scrollbar {
+    width: 4px;
+  }
+  form textarea::-webkit-scrollbar-track {
+    background: #bde9fa;
+  }
+  form textarea::-webkit-scrollbar-thumb {
+    background-color: #0d0535;
+    border-radius: 50%;
+  }
+  form button {
+    width: 135px;
+    height: 50px;
+    background-color: white;
+    color: rgb(2, 2, 70);
+    border: 2.5px solid rgb(93, 158, 182);
+    border-radius: 15px;
+    margin: 40px 3%;
+    font-size: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: bolder;
+    transition: background-color 0.3s linear;
+  }
+  form button:hover {
+    background-color: rgb(93, 158, 182);
+  }
+  form button:hover .fa-refresh {
+    transform: rotate(180deg);
+  }
+  form button:hover .fa-paper-plane-o {
+    transform: translate(15px, -15px) scale(0.1, 0.1);
+  }
+  form button:focus {
+    outline: none;
+  }
+  form i {
+    margin-right: 15px;
+    transition: transform 0.5s 0.3s;
+  }
+  .space {
+    width: 10%;
+  }
+  .contact_info {
+    width: 32%;
+    color: #052f3a;
+    text-align: center;
+    font-size: 1em;
+    font-family: arial;
+    box-sizing: border-box;
+    padding: 3%;
+    padding-top: 0;
+    position: sticky;
+    top: 100px;
+    background-color: rgb(209, 231, 238);
+    border: 1px solid rgb(77, 77, 170);
+    margin-left: 3%;
+  }
+  .contact_info h2 {
+    padding: 25px;
+    color: rgb(2, 2, 59);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .contact_info p {
+    padding: 5px 0px 20px 0px;
+  }
+  .contact_info .job {
+    font-weight: bold;
+  }
+  .contact_info i {
+    margin-top: 10px;
+  }
+}
